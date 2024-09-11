@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            background-color: #00a8e6;
+            border-collapse: collapse;
+            padding: 20px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        th {
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            padding: 10px;
+            width: 100px;
+            margin: 5px 2px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="button"] {
+            background-color: #ffc107;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;">
+    <table>
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td><label for="name">Enter Name</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Enter Password</label></td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Enter Address</label></td>
+            <td><textarea id="address" name="address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Select Game</label></td>
+            <td>
+                <input type="checkbox" id="hockey" name="game" value="Hockey"><label for="hockey"> Hockey</label><br>
+                <input type="checkbox" id="football" name="game" value="Football"><label for="football"> Football</label><br>
+                <input type="checkbox" id="badminton" name="game" value="Badminton"><label for="badminton"> Badminton</label><br>
+                <input type="checkbox" id="cricket" name="game" value="Cricket"><label for="cricket"> Cricket</label><br>
+                <input type="checkbox" id="volleyball" name="game" value="Volleyball"><label for="volleyball"> Volleyball</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="Male"><label for="male"> Male</label>
+                <input type="radio" id="female" name="gender" value="Female"><label for="female"> Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="age">Select your age</label></td>
+            <td>
+                <select id="age" name="age">
+                    <option value="" disabled selected>Select</option>
+                    <option value="Under 18">Under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45+">45+</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="photo">Select Photo</label></td>
+            <td><input type="file" id="photo" name="photo" accept="image/*"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="button" value="Click Me">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit Form">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
